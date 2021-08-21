@@ -1,20 +1,5 @@
 "use strict";
 
-// 1. Let's Google Leaflet and click on the JavaScript library for interactive maps.
-// 2. After that click on download, and we con download it or hosted a version of Leaflet and this mean that we can use a version of this library that is already hosted by someone else.
-// 3. And in this case is CDN (Content Delivery Network) and it has this URL below it (unpkg.com) and after that we have the Leaflet library (leaflet)
-// 4. And actually we need css and js file.
-// 5. So there is more ways like Using a npm package manager, we will learn it later, but for now easiest way is using hosted version that is on a CDN.
-// 6. Copy that and paste it before our script in HTML (Pic No 1.1 and 1.2).
-// 7. Why to paste it before our script -> So by the time that our script loads, the browser must already have downloaded the Leaflet library because otherwise our code will not be able to work without library.
-
-// NOTICE why we used defer attribute for our script? as we learn, we should never put any JS in header without any of the defer or async attributes.
-//  And since the order matters here (<script src="https://unpkg.com/leaflet@1......), and remember we must then use defer attribute (Pic 1.3).
-
-// 8. Now back to Leaflet website -> Overview -> There is a simple example, how we could implement a map with a certain coordinates here (for example setView([51.505,-0.09],13)) and how to display marker like our position (Pic No 1.4).
-// 9. Now copy the code and paste to your JS (pic No 1.5).
-// 10. Now we have to find our position (Pic No 1.6).
-
 let map, mapEvent; // Global area
 
 class Workout {
